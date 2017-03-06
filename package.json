@@ -1,0 +1,36 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava EPI/*/*/test.js",
+    "test:5": "ava EPI/Chap5/*/test.js",
+    "test:6": "ava EPI/Chap6/*/test.js",
+    "test:7": "ava EPI/Chap7/*/test.js",
+    "test:8": "ava EPI/Chap8/*/test.js",
+    "test:9": "ava EPI/Chap9/*/test.js",
+    "test:10": "ava EPI/Chap10/*/test.js",
+    "test:11": "ava EPI/Chap11/*/test.js",
+    "test:12": "ava EPI/Chap12/*/test.js",
+    "test:13": "ava EPI/Chap13/*/test.js",
+    "test:14": "ava EPI/Chap14/*/test.js",
+    "test:15": "ava EPI/Chap15/*/test.js",
+    "test:16": "ava EPI/Chap16/*/test.js",
+    "test:17": "ava EPI/Chap17/*/test.js",
+    "test:18": "ava EPI/Chap18/*/test.js",
+    "test:19": "ava EPI/Chap19/*/test.js",
+    "test:20": "ava EPI/Chap20/*/test.js",
+    "test:21": "ava EPI/Chap21/*/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.17.0"
+  },
+  "dependencies": {
+    "heap": "^0.2.6",
+    "lodash": "^4.17.4"
+  }
+}
