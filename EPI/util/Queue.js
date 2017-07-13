@@ -8,9 +8,9 @@ class Queue {
   }
 
   dequeue() {
-    const item = this.items[0]
-    this.items = this.items.slice(1)
-    return item
+    const [first, ...rest] = this.items
+    this.items = rest
+    return first
   }
 
   isEmpty() {
