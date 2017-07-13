@@ -1,4 +1,4 @@
-const parity = require('./1')
+const parity = require('./again')
 const test = require('ava')
 
 test('even parity', t => {

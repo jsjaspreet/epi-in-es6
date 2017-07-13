@@ -1,5 +1,5 @@
 const test = require('ava')
-const exp = require('./')
+const exp = require('./again')
 
 test('Math.pow(3,2)', t => {
   t.is(Math.pow(3, 2), exp(3, 2))
