@@ -9,6 +9,10 @@ test('Math.pow(7,11)', t => {
   t.is(Math.pow(7, 11), exp(7, 11))
 })
 
+test('Math.pow(7,-2)', t => {
+  t.is(Math.pow(7, -2), exp(7, -2))
+})
+
 test('Math.pow(3,0)', t => {
   t.is(Math.pow(3, 0), exp(3, 0))
 })
