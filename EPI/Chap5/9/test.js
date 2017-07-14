@@ -1,5 +1,5 @@
 const test = require('ava')
-const isPalindrome = require('./again')
+const isPalindrome = require('./three')
 
 test('31413 - true', t => {
   t.is(true, isPalindrome(31413))

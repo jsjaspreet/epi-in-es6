@@ -22,7 +22,6 @@ function withinRange(first, second, third) {
   return first <= second < third
 }
 
-
 function withinXRange(R1, R2) {
   return withinRange(R1.x, R2.x, R1.x + R1.width) ||
     withinRange(R2.x, R1.x, R2.x + R2.width)
@@ -38,7 +37,7 @@ const intersection = (R1, R2) => {
   if (hasIntersection) {
     const startingX = Math.max(R1.x, R2.x)
     const startingY = Math.max(R1.y, R2.y)
-    const width = Math.min(startingX + R1.width, startingX + R2.width) - startingX
+    const width = Math.min(R1.x + R1.width, R2.x + R2.width) - startingX
     const height = Math.min(R1.y + R1.height, R2.y + R2.height) - startingY
     return new Rectangle({ x: startingX, y: startingY, width, height })
   }

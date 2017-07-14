@@ -22,6 +22,14 @@ test('inclusive', t => {
   t.deepEqual(R2.getAttributes(), int.getAttributes())
 })
 
+test('intersection2', t => {
+  const R1 = new Rectangle({ x: 1, y: 1, width: 10, height: 10 })
+  const R2 = new Rectangle({ x: 3, y: 5, width: 100, height: 100 })
+  const R3 = new Rectangle({ x: 3, y: 5, width: 8, height: 6 })
+  const int = intersection(R1, R2)
+  t.deepEqual(R3.getAttributes(), int.getAttributes())
+})
+
 test('edge', t => {
   const R1 = new Rectangle({ x: 0, y: 0, width: 1, height: 1 })
   const R2 = new Rectangle({ x: 1, y: 0, width: 1, height: 1 })
