@@ -1,5 +1,5 @@
 const test = require('ava')
-const spiral = require('./')
+const spiral = require('./again')
 const { isEqual } = require('lodash')
 
 test(`[[1, 2, 3],

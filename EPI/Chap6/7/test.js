@@ -1,5 +1,5 @@
 const test = require('ava')
-const maxProfit = require('./')
+const maxProfit = require('./again')
 
 test('[10, 100, 3, 3]', t => {
   t.is(90, maxProfit([10, 100, 3, 3]))

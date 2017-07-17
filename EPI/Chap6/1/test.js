@@ -1,6 +1,6 @@
 const test = require('ava')
 const { isEqual } = require('lodash')
-const dutchPartition = require('./')
+const dutchPartition = require('./again')
 
 test('[1, 2, 2, 10, 3]', t => {
   const A = [1, 2, 2, 10, 3]
