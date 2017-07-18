@@ -1,5 +1,5 @@
 const test = require('ava')
-const baseConvert = require('./')
+const baseConvert = require('./again')
 
 test("10, 10, 16", t => {
   t.is("A", baseConvert("10", 10, 16))

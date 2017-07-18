@@ -1,0 +1,32 @@
+const test = require('ava')
+const merge = require('./')
+const Node = require('../../util/LinkedList')
+const { isEqual } = require('lodash')
+
+test('[1, 3], [2]', t => {
+  const x = new Node(1)
+  const y = new Node(2)
+  const z = new Node(3)
+  x.link(z)
+  const merged = merge(x, y)
+  t.true(isEqual([1, 2, 3], [merged.data, merged.next.data, merged.next.next.data]))
+})
+test('[0], [1, 2]', t => {
+  const x = new Node(0)
+  const y = new Node(1)
+  const z = new Node(2)
+  y.link(z)
+  const merged = merge(x, y)
+  t.true(isEqual([0, 1, 2], [merged.data, merged.next.data, merged.next.next.data]))
+})
+
+test('[0, 100], [1, 2]', t => {
+  const x = new Node(0)
+  const d = new Node(100)
+  const y = new Node(1)
+  const z = new Node(2)
+  y.link(z)
+  x.link(d)
+  const merged = merge(x, y)
+  t.true(isEqual([0, 1, 2, 100], [merged.data, merged.next.data, merged.next.next.data, merged.next.next.next.data]))
+})

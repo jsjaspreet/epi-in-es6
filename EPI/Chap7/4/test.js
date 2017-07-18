@@ -1,5 +1,5 @@
 const test = require('ava')
-const RandR = require('./')
+const RandR = require('./again')
 const { isEqual } = require('lodash')
 
 test('[a, c, d ,b, b, c, a]', t => {

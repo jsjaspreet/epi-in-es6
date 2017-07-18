@@ -4,6 +4,10 @@ class Node {
     this.next = null
   }
 
+  set(data) {
+    this.data = data
+  }
+
   link(node) {
     this.next = node
   }
