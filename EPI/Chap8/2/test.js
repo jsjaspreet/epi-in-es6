@@ -1,5 +1,5 @@
 const test = require('ava')
-const reverse = require('./')
+const reverse = require('./again')
 const Node = require('../../util/LinkedList')
 const { isEqual } = require('lodash')
 
@@ -10,5 +10,5 @@ test('1, 2, 3', t => {
   x.link(y)
   y.link(z)
   const reversed = reverse(x)
-  t.true(isEqual([3, 2, 1], [reversed.data, reversed.next.data, reversed.next.next.data]))
+  t.true(isEqual([3, 2, 1, null], [reversed.data, reversed.next.data, reversed.next.next.data, reversed.next.next.next]))
 })
