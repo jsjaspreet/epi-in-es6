@@ -4,13 +4,14 @@ class Queue {
   }
 
   queue(item) {
-    this.items = [...this.items, item]
+    this.items.push(item)
   }
 
   dequeue() {
-    const [first, ...rest] = this.items
-    this.items = rest
-    return first
+    if (this.items.length === 0) {
+      throw new Error("Cannot dequeue on an empty queue")
+    }
+    return this.items.shift()
   }
 
   isEmpty() {
