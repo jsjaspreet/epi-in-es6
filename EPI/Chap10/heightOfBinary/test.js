@@ -1,4 +1,4 @@
-import height from './'
+import height from './again'
 import test from 'ava'
 import BinaryTree from '../../util/BinaryTree'
 

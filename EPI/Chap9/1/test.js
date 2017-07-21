@@ -1,5 +1,5 @@
 import test from 'ava'
-import maxStack from './'
+import maxStack from './again'
 
 test('1, 2, 3', t => {
   const s = new maxStack()
