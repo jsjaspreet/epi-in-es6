@@ -1,9 +1,14 @@
 const test = require('ava')
-const exp = require('./again')
+const exp = require('./three')
 
 test('Math.pow(3,2)', t => {
   t.is(Math.pow(3, 2), exp(3, 2))
 })
+
+test('Math.pow(-3,1)', t => {
+  t.is(Math.pow(-3, 1), exp(-3, 1))
+})
+
 
 test('Math.pow(7,11)', t => {
   t.is(Math.pow(7, 11), exp(7, 11))
