@@ -1,5 +1,5 @@
 const test = require('ava')
-const mergeSorted = require('./')
+const mergeSorted = require('./again')
 
 test('[1, 2], [3, 4]', t => {
   const merged = mergeSorted([1, 2], [3, 4])

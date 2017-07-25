@@ -1,6 +1,6 @@
 const test = require('ava')
 import BinaryTree from '../../util/BinaryTree'
-const isBalanced = require('./')
+const isBalanced = require('./again')
 
 test('1', t => {
   const b1 = new BinaryTree(1)
