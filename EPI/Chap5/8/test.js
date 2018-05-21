@@ -1,5 +1,5 @@
 const test = require('ava')
-const reverse = require('./again')
+const reverse = require('./three')
 
 test('positive', t => {
   t.is(314, reverse(413))
