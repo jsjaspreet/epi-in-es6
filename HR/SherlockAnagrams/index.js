@@ -37,7 +37,6 @@ function* substrings(word) {
       yield word.substr(i, j);
     }
   }
-
 }
 
 module.exports = (word) => {
