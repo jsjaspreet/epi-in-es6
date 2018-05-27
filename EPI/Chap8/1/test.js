@@ -1,5 +1,5 @@
 const test = require('ava')
-const merge = require('./')
+const merge = require('./again')
 const Node = require('../../util/LinkedList')
 const { isEqual } = require('lodash')
 
