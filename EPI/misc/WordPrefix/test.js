@@ -1,4 +1,4 @@
-const Trie = require('../../util/Trie')
+const Trie = require('../../util/TrieAgain')
 const test = require('ava')
 const { isEqual } = require('lodash')
 
