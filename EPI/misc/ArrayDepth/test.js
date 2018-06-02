@@ -13,6 +13,10 @@ test('bad input 2', t => {
   t.throws(() => ArrayDepth('fds'));
 });
 
+test('bad input 3', t => {
+  t.throws(() => ArrayDepth(''));
+});
+
 test('[[]]', t => {
   t.is(ArrayDepth('[[]]'), 2);
 });
@@ -21,8 +25,8 @@ test('[1]', t => {
   t.is(ArrayDepth('[1]'), 1);
 });
 
-test('[[2]]', t => {
-  t.is(ArrayDepth('[[2]]'), 2);
+test('[[2, "abc"], {"a":1}]', t => {
+  t.is(ArrayDepth('[[2, "abc"], {"a":1}]'), 2);
 });
 
 test('[[[[[[[3]]]]]]]', t => {

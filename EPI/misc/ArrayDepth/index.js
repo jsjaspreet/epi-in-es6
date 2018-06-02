@@ -1,11 +1,6 @@
-function isLeafNode(arr) {
-  return !Array.isArray(arr) || arr.length === 0;
-}
-
 function* calculateArrayDepths(arr, depth) {
-  if (isLeafNode(arr)) {
+  if (arr.length === 0) {
     yield depth;
-    return;
   }
 
   for (const el of arr) {
@@ -24,7 +19,7 @@ module.exports = (arrString) => {
   if (!Array.isArray(arr)) {
     throw new Error('Must pass an array');
   }
-  let maxDepth = 0;
+  let maxDepth = 1;
   for (const currMaxDepth of calculateArrayDepths(arr, 1)) {
     maxDepth = Math.max(maxDepth, currMaxDepth);
   }
