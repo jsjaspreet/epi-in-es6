@@ -13,5 +13,5 @@ module.exports = function(hay, needle) {
       index = newIndex
     }
   }
-  return index
+  return -1
 }

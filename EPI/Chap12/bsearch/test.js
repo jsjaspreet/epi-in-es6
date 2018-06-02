@@ -1,5 +1,5 @@
 const test = require('ava')
-const bsearch = require('./again')
+const bsearch = require('./three')
 
 test('[1, 2, 3], 3', t => {
   t.true(bsearch([1, 2, 3], 3)[0])
