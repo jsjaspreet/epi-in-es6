@@ -1,5 +1,5 @@
 const test = require('ava')
-const reverse = require('./again')
+const reverse = require('./three')
 const Node = require('../../util/LinkedList')
 const { isEqual } = require('lodash')
 
