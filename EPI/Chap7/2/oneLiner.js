@@ -1,0 +1,1 @@
+module.exports = (str, b1, b2) => Number.parseInt(str, b1).toString(b2).toUpperCase();

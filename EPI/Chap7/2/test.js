@@ -1,5 +1,5 @@
 const test = require('ava')
-const baseConvert = require('./again')
+const baseConvert = require('./oneLiner')
 
 test("10, 10, 16", t => {
   t.is("A", baseConvert("10", 10, 16))
