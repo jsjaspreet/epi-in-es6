@@ -1,6 +1,6 @@
 const test = require('ava')
 const BinaryTree = require('../../util/BinaryTreeWithParent')
-const { bruteParent } = require('./')
+const { bruteParent } = require('./again')
 
 test('simple', t => {
   const x = new BinaryTree(1)
