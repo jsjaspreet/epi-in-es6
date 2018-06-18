@@ -16,7 +16,6 @@ module.exports = class LongestRiver {
 
   isSameRiver(i, j, val) {
     const sameRiver = this.riverMap[i][j] === val;
-    // console.log('sameRiver', sameRiver);
     return sameRiver;
   }
 
