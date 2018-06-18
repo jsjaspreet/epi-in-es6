@@ -1,13 +1,14 @@
-module.exports = function(numArray) {
-  let success = false
+module.exports = function (numArray) {
+  let notAllNines = false;
+  const newArray = [...numArray];
   for (let i = numArray.length - 1; i >= 0; i--) {
     if (numArray[i] !== 9) {
-      numArray[i] = numArray[i] + 1
-      success = true
-      break
+      newArray[i] = newArray[i] + 1;
+      notAllNines = true;
+      break;
     } else {
-      numArray[i] = 0
+      newArray[i] = 0;
     }
   }
-  return success ? numArray : [1, ...numArray]
-}
+  return notAllNines ? newArray : [1, ...newArray];
+};
