@@ -1,16 +1,16 @@
-function* preorderTraverse(node) {
+function* inorderTraverse(node) {
   if (!node) {
     return;
   }
   if (node.left) {
-    yield* preorderTraverse(node.left);
+    yield* inorderTraverse(node.left);
   }
   yield node.val;
   if (node.right) {
-    yield* preorderTraverse(node.right);
+    yield* inorderTraverse(node.right);
   }
 }
 
 module.exports = function (root) {
-  return [...preorderTraverse(root)];
+  return [...inorderTraverse(root)];
 };
