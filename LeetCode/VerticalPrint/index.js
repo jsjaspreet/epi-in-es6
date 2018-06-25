@@ -1,4 +1,4 @@
-function inorder(node, map, currPos, currMin, currMax) {
+function inorder(node, map, currPos) {
   if (!node) {
     return;
   }
