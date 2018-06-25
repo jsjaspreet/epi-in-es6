@@ -1,5 +1,5 @@
 const test = require('ava');
-const vert = require('./');
+const vert = require('./BFS');
 const Node = require('./ListNode');
 
 test('simple', t => {
