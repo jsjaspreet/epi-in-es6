@@ -1,11 +1,11 @@
 const test = require('ava');
 const ws = require('./');
 
-test.skip('complex', t => {
+test('complex', t => {
   const i = ['abat', 'baba', 'atan', 'atal'];
   const o = [['baba', 'abat', 'baba', 'atal'], ['baba', 'abat', 'baba', 'atan']];
   const aO = ws(i);
-  t.deepEqual(o, aO);
+  t.deepEqual(o.sort(), aO.sort());
 });
 
 
