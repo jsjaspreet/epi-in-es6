@@ -28,7 +28,7 @@ function* squaresHelper(grid, words, rowIdx) {
 
 module.exports = (words) => {
   const result = [];
-  words.forEach((word, idx) => {
+  words.forEach((word) => {
     const potentialSquare = [word];
     for (let i = 1; i < word.length; i++) {
       potentialSquare.push(word[i]);
