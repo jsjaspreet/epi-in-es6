@@ -6,8 +6,9 @@ module.exports = (intervals, newInterval) => {
     result.push(intervals[i++]);
   }
 
-  while (i < intervals.length && intervals[i][0] <= newInterval[1]) {
-    mergedInterval = [Math.min(newInterval[0], intervals[i][0]), Math.max(newInterval[1], intervals[i][1])];
+
+  while (i < intervals.length && intervals[i][0] <= mergedInterval[1]) {
+    mergedInterval = [Math.min(mergedInterval[0], intervals[i][0]), Math.max(mergedInterval[1], intervals[i][1])];
     i++;
   }
   result.push(mergedInterval);
