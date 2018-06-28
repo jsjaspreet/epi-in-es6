@@ -11,7 +11,7 @@ function getNumLiveNeighbors(grid, i, j) {
       }
     }
   }
-  return numLive - grid[i][j];
+  return numLive - (grid[i][j] & 1);
 };
 
 function getNextLife(currHealth, numLiveNeighbors) {
