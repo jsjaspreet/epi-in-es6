@@ -1,5 +1,5 @@
 const test = require('ava')
-const firstOccurence = require('./again')
+const firstOccurence = require('./three')
 
 test('[5], 5', t => {
   t.is(0, firstOccurence([5], 5))

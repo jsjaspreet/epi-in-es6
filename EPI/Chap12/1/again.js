@@ -16,8 +16,10 @@ function binarySearch(hay, needle) {
 
 module.exports = function firstOccurrence(hay, needle) {
   let firstOccurrence = binarySearch(hay, needle);
+  console.log("firstOcc", firstOccurrence)
   while (true) {
     let nextSearch = binarySearch(hay.slice(0, firstOccurrence), needle);
+    console.log("nextSearch", nextSearch)
     if (nextSearch < 0) {
       break;
     }
